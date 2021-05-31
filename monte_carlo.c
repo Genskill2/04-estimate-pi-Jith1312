@@ -39,5 +39,18 @@ int main(void) {
   }
 }
 
+float mc_pi(int darts){
+  float x,y;
+  float count=0.0;
+  for (int i=1; i<=n; i++){
+    x=frandom();
+    y=frandom();
+    if (sqrt(x*x+y*y<=1)){
+      count++;
+    }
+  }
+  return 4.0*(count/darts);
+}
+
 
 
