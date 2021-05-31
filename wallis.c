@@ -27,7 +27,7 @@ int main(void) {
 float wallis_pi(int enter){
 float estimate=1.0;
 for (int i=1; i<=enter; i++){
-estimate * = (4.0*i*i)/(4.0*i*i-1);
+estimate *= (4.0*i*i)/(float)((4.0*i*i)-1);
 }
 return estimate*2;
 }
