@@ -45,11 +45,11 @@ float mc_pi(int darts){
   for (int i=1; i<=darts; i++){
     x=frandom();
     y=frandom();
-    if (sqrt(x*x+y*y<=1)){
+    if (sqrt(((x*x)+(y*y))<=1)){
       count++;
     }
   }
-  return 4.0*(count/darts);
+  return 4.0*(count/(float)darts);
 }
 
 
